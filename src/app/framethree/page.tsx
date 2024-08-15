@@ -7,6 +7,7 @@ export const metadeta: Metadata = {
     description: "Learn about our dedicated team of professionals who are passionate about helping you succeed.",
 };
 
+/* added some new components */
 export default function FrameThreePage() {
     return <Page />
 }

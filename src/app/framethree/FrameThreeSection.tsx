@@ -5,6 +5,7 @@ export default function FrameThreeSection() {
     return (
         <>
             {/* Frame Three Section */}
+            /* added some new components */
             <div className="flex flex-col gap-[52px] self-stretch sm:gap-[26px]">
                 <div className="mx-5 md:mx-0">
                     <div className="flex item-center md:flex-col">

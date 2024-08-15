@@ -14,3 +14,5 @@ export default function FrameThreePage() {
         </div>
     );
 }
+
+/* added some new components */
