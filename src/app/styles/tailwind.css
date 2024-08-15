@@ -1,0 +1,50 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+[type="text],
+input:where(:not([type])),
+[type="password"],
+[type="email"],
+[type="number"],
+[type="tel"],
+[type="url"],
+[type="search"],
+[type="date"],
+[type="month"],
+[type="week"],
+[type="time"],
+[type="datetime-local"],
+[multiple],
+select {
+    appearance: none;
+    background-color: transparent;
+    border-color: unset;
+    border-width: 0;
+    border-radius: unset;
+    padding: unset;
+    font-size: unset;
+    line-height: unset;
+}
+
+[type="text"]:focus,
+[type="email"]:focus,
+[type="number"]:focus,
+[type="url"]:focus,
+[type="search"]:focus,
+[type="date"]:focus,
+[type="password"]:focus,
+[multiple]:focus,
+select:focus {
+    --tw-ring-color: transparent;
+    border-color: transparent;
+}
+[type="radio"]:focus,
+[type="checkbox"]:focus {
+    --tw-ring-color: transparent;
+}
+@layer components {
+    .container-xs {
+        @apply w-full mx-auto max-w-[1158px];
+    }
+}

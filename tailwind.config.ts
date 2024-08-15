@@ -1,20 +1,19 @@
-import type { Config } from "tailwindcss";
-
-const config: Config = {
-  content: [
-    "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
-    "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
-    "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
-  ],
+module.exports = {
+  mode: "jit",
+  content: ["./src/**/**/*.{js,ts,jsx,tsx,html,mdx}", "./src/**/*.{js,ts,jsx,tsx,html,mdx}"],
+  darkMode: "class",
   theme: {
+    screens: { md: { max: "1050px" }, sm: { max: "550px" } },
     extend: {
-      backgroundImage: {
-        "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
-        "gradient-conic":
-          "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
+      colors: {
+        black: { 900: "#0c0b0b", "900_01": "#000000", "900_7f": "#0000007f" },
+        blue_gray: { 900: "#373636", "100_51": "#d9d9d951" },
+        gray: { 900: "#1c5806" },
+        white: { a700: "#fdfdfd", a700_01: "#ffffff", a700_e5: "#fdfdfde5" },
       },
+      boxShadow: {},
+      fontFamily: { googlesansdisplay: "Google Sans Display" },
     },
   },
-  plugins: [],
+  plugins: [require("@tailwindcss/forms")],
 };
-export default config;
