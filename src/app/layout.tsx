@@ -1,6 +1,6 @@
 import React, { ReactNode } from "react";
-import "@/styles/tailwind.css";
-import "../styles/index.css";
+import "../../styles/tailwind.css";
+import "../../styles/index.css";
 import "../styles/font.css";
 
 function RootLayout({ children }: { children: ReactNode }) {
